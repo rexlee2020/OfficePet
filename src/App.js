@@ -1,24 +1,36 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import { BrowserRouter as Router, Switch, Route, Routes } from 'react-router-dom';
+import Intro from "./Intro";
+import Question from "./Question";
+import Result from "./Result";
+import "./App.css";
 
 function App() {
+  const [showQuestions, setShowQuestions] = useState(false);
+  const [mbti, setMbti] = useState("");
+
+  function handleStart() {
+    setShowQuestions(true);
+  }
+
+  function handleFinish(mbti) {
+    setMbti(mbti);
+    setShowQuestions(false);
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div className="app-container">
+        <Routes>
+          <Route path="/" element={showQuestions ? (
+              <Question onFinish={handleFinish} />
+            ) : (
+              <Intro onStart={handleStart} />
+            )} />
+          <Route path="/result" element={<Result mbti={mbti} />} />
+        </Routes>
+      </div>
+    </Router>
   );
 }
 

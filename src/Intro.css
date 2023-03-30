@@ -1,0 +1,33 @@
+.intro-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  .intro-heading {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+  }
+  
+  .intro-text {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  .intro-button {
+    font-size: 1.5rem;
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .intro-button:hover {
+    background-color: #3e8e41;
+  }
+  
