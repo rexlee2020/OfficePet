@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { BrowserRouter as Router, Switch, Route, Routes } from "react-router-dom";
+import { HashRouter as Router, Switch, Route, Routes } from "react-router-dom";
 import Intro from "./Intro";
 import Question from "./Question";
 import Result from "./Result";
