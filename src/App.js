@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { BrowserRouter as Router, Switch, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route, Routes } from "react-router-dom";
 import Intro from "./Intro";
 import Question from "./Question";
 import Result from "./Result";
@@ -22,11 +22,16 @@ function App() {
     <Router>
       <div className="app-container">
         <Routes>
-          <Route path="/" element={showQuestions ? (
-              <Question onFinish={handleFinish} />
-            ) : (
-              <Intro onStart={handleStart} />
-            )} />
+          <Route
+            path="/"
+            element={
+              showQuestions ? (
+                <Question onFinish={handleFinish} />
+              ) : (
+                <Intro onStart={handleStart} />
+              )
+            }
+          />
           <Route path="/result" element={<Result mbti={mbti} />} />
         </Routes>
       </div>
