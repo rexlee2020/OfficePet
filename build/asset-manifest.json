@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/static/css/main.3c048821.css",
-    "main.js": "/static/js/main.924b3ce4.js",
-    "index.html": "/index.html",
-    "main.3c048821.css.map": "/static/css/main.3c048821.css.map",
-    "main.924b3ce4.js.map": "/static/js/main.924b3ce4.js.map"
+    "main.css": "/OfficePet/static/css/main.3c048821.css",
+    "main.js": "/OfficePet/static/js/main.a18b7958.js",
+    "index.html": "/OfficePet/index.html",
+    "main.3c048821.css.map": "/OfficePet/static/css/main.3c048821.css.map",
+    "main.a18b7958.js.map": "/OfficePet/static/js/main.a18b7958.js.map"
   },
   "entrypoints": [
     "static/css/main.3c048821.css",
-    "static/js/main.924b3ce4.js"
+    "static/js/main.a18b7958.js"
   ]
 }
